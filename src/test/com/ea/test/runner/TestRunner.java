@@ -39,9 +39,9 @@ public class TestRunner {
             //Pass the hardcoded scenario name
 
             CucumberTagStatement scenarioName = element.next();
-            if (!scenarioName.getVisualName().equals("Scenario: Create Employee with all details")) {
-                element.remove();
-            }
+//            if (!scenarioName.getVisualName().equals("Scenario: Create Employee with all details")) {
+//                element.remove();
+//            }
         }
 
         testNGCucumberRunner.runCucumber(cucumberFeatureWrapper.getCucumberFeature());
